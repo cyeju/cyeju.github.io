@@ -2,8 +2,8 @@
 
 import type { FC } from 'react';
 import { Typography, Grid, Tooltip, Button } from '@mui/material';
-import { skillList } from '@/constants';
 import { ColorSection } from '@/components/atoms';
+import { skillList } from '@/constants';
 
 export const Second: FC = () => {
     return (
