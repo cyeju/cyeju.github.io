@@ -1,6 +1,11 @@
 import styled from '@emotion/styled';
 
 export const GlassCard = styled.div`
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
