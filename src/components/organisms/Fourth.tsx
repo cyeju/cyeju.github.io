@@ -2,8 +2,8 @@
 
 import { useState, type FC, type SyntheticEvent } from 'react';
 import { Stack, Box, Tabs, Tab } from '@mui/material';
-import { CustomTabPanel } from '@/components/molecules';
 import { ColorSection } from '@/components/atoms';
+import { CustomTabPanel, DevPhilosophy } from '@/components/molecules';
 
 const a11yProps = (index: number) => {
     return {
@@ -44,7 +44,7 @@ export const Fourth: FC = () => {
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-                    개발 철학
+                    <DevPhilosophy />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
                     중요하게 생각하는 점,
