@@ -1,6 +1,7 @@
 'use client';
 
 import type { FC } from 'react';
+import { motion } from 'framer-motion';
 import { Typography } from '@mui/material';
 import { ColorSection } from '@/components/atoms';
 
@@ -43,15 +44,17 @@ export const First: FC = () => {
             </Typography>
 
             <Typography component="h2" variant="h2" sx={style.h2}>
-                <span
+                <motion.span
                     style={{
                         textShadow:
                             ' 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f7e057,0 0 92px #f7e057, 0 0 102px #f7e057, 0 0 112px #f7e057, 0 0 161px #f7e057',
                     }}
+                    animate={{ color: ['#bc7f7f', '#f19c9c'] }}
+                    transition={{ duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
                 >
                     개발자 최예주
-                </span>
-                에요
+                </motion.span>
+                입니다
             </Typography>
         </ColorSection>
     );

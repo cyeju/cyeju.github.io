@@ -1,6 +1,7 @@
 import type { NextPage, Metadata } from 'next';
 import type { PropsWithChildren } from 'react';
 import { Inter } from 'next/font/google';
+import '@/assets/fonts/font.css';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
