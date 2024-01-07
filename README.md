@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+프론트엔드 개발자 최예주의 포트폴리오 사이트입니다
 
-First, run the development server:
+## How to run?
 
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+📦src
+ ┣ 📂assets // 미디어 파일
+ ┣ 📂components // 컴포넌트
+ ┃ ┣ 📂atoms // 세분화 된 컴포넌트
+ ┃ ┣ 📂molecules // atom을 결합한 컴포넌트
+ ┃ ┣ 📂organisms // atom + molecules 컴포넌트
+ ┃ ┗ 📂templates // 프리젠테이셔널 컴포넌트
+ ┣ 📂constants // 상수 데이터
+ ┣ 📂Pages // 컨테이너 컴포넌트
+ ┣ 📜App.tsx
+ ┣ 📜main.tsx
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Commit rule
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+feat        새로운 기능을 제공합니다.
+fix         버그 수정.
+docs        문서만 변경됩니다.
+style       코드 작동에 영향을 미치지 않는 스타일 변경(빈 공간, 코드 포멧팅, 누락된 세미콜론 등)
+refactor    버그를 수정하거나 기능을 추가하지 않는 코드 변경입니다.
+test        테스트 코드를 추가하거나 기존 테스트 코드를 수정합니다.
+chore       빌드 프로세스 또는 보조 도구 및 라이브러리(예: 문서 생성)에 대한 변경 사항.
+perf        성능을 향상시키는 코드 변경입니다.
+ci          CI 구성 파일 및 스크립트의 변경 사항.
+build       빌드 시스템 또는 외부 디펜던시에 영향을 미치는 변경 사항(예: gulp, broccli, npm).
+temp        변경사항에 포함되지 않는 임시 커밋입니다.
+```
