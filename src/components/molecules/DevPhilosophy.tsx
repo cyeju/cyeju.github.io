@@ -1,7 +1,5 @@
 import { Grid, Stack } from '@mui/material';
-import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
-import RuleIcon from '@mui/icons-material/Rule';
-import BuildIcon from '@mui/icons-material/Build';
+import { AutoFixHigh, Rule, Build } from '@mui/icons-material';
 import { GlassCard } from '@/components/atoms';
 
 export const DevPhilosophy = () => {
@@ -13,7 +11,7 @@ export const DevPhilosophy = () => {
                         <GlassCard>
                             <h2 style={{ color: '#f7e057' }}>
                                 <span style={{ marginRight: '8px' }}>
-                                    <AutoFixHighIcon />
+                                    <AutoFixHigh />
                                 </span>
                                 Commit Rule
                             </h2>
@@ -28,7 +26,7 @@ export const DevPhilosophy = () => {
                         <GlassCard>
                             <h2 style={{ color: '#f7e057' }}>
                                 <span style={{ marginRight: '8px' }}>
-                                    <RuleIcon />
+                                    <Rule />
                                 </span>
                                 Coding Conventions
                             </h2>
@@ -41,7 +39,7 @@ export const DevPhilosophy = () => {
                         <GlassCard>
                             <h2 style={{ color: '#f7e057' }}>
                                 <span style={{ marginRight: '8px' }}>
-                                    <BuildIcon />
+                                    <Build />
                                 </span>
                                 Refactoring
                             </h2>

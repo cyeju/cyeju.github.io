@@ -3,7 +3,7 @@
 import { useState, type FC, type SyntheticEvent } from 'react';
 import { Stack, Box, Tabs, Tab } from '@mui/material';
 import { ColorSection } from '@/components/atoms';
-import { CustomTabPanel, DevPhilosophy } from '@/components/molecules';
+import { CustomTabPanel, DevPhilosophy, CultureFit } from '@/components/molecules';
 
 const a11yProps = (index: number) => {
     return {
@@ -47,7 +47,7 @@ export const Fourth: FC = () => {
                     <DevPhilosophy />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                    중요하게 생각하는 점,
+                    <CultureFit />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
                     관심사 기타
