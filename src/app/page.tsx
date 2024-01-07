@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import { ColorSection } from '@/components/atoms/ColorSection';
+import { HomeTemplate } from '@/components/templates';
 
 const Home: NextPage = () => {
-    return <ColorSection color="#BD3455">Hi</ColorSection>;
+    return <HomeTemplate />;
 };
 
 export default Home;
