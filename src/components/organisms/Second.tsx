@@ -1,6 +1,7 @@
 'use client';
 
 import type { FC } from 'react';
+import { motion } from 'framer-motion';
 import { Typography, Grid, Tooltip, Button } from '@mui/material';
 import { ColorSection } from '@/components/atoms';
 import { skillList } from '@/constants';
@@ -11,7 +12,13 @@ export const Second: FC = () => {
             <div>
                 <Grid container justifyContent="center" sx={{ alignItems: 'center' }} rowSpacing={6}>
                     <Grid item xs={12} sm={6}>
-                        <Typography component="h1" variant="h1">
+                        <Typography
+                            component={motion.h1}
+                            variant="h1"
+                            initial={{ translateX: -200, opacity: 0 }}
+                            whileInView={{ translateX: 0, opacity: 1 }}
+                            transition={{ duration: 1 }}
+                        >
                             기술스택
                         </Typography>
                     </Grid>
