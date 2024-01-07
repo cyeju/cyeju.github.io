@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import styles from './page.module.css';
 
-export const Home: NextPage = () => {
+const Home: NextPage = () => {
     return (
         <main className={styles.main}>
             <div className={styles.description}>
@@ -85,3 +85,5 @@ export const Home: NextPage = () => {
         </main>
     );
 };
+
+export default Home;
