@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { motion } from 'framer-motion';
+import { Typography } from '@mui/material';
 import { ColorSection, CircleModel, WorkCard, WorkImage } from '@/components/atoms';
 import { workList } from '@/constants';
 
@@ -28,14 +29,14 @@ export const Third: FC = () => {
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                {workList.map(({ title, imageSrc }) => {
+                {workList.map(({ imageSrc, title, classification, comment }) => {
                     return (
                         <WorkCard key={title}>
                             {/* image 300 */}
-                            <WorkImage src={imageSrc} />
-                            {/* <Image alt="이미지" src={imageSrc} width={500} height={300} style={style.img} /> */}
+                            <WorkImage src={imageSrc} title={title} />
                             {/* text 140 */}
-                            {title}
+                            <Typography>{classification}</Typography>
+                            <Typography>{comment}</Typography>
                             {/* scroll 10 */}
                         </WorkCard>
                     );
