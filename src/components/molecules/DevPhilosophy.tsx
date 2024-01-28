@@ -12,7 +12,7 @@ const style = {
         marginRight: '8px',
     },
     h2Color: {
-        color: '#f7e057',
+        color: '#ffd400',
     },
     imageBorderRadius: {
         borderRadius: '5px',

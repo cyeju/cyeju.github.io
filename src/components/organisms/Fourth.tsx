@@ -28,7 +28,7 @@ export const Fourth: FC = () => {
     };
 
     return (
-        <ColorSection color="#0f4c82">
+        <ColorSection color="white">
             <div>
                 <Stack sx={{ alignItems: 'center' }}>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -38,18 +38,18 @@ export const Fourth: FC = () => {
                             aria-label="basic tabs example"
                             TabIndicatorProps={{
                                 style: {
-                                    backgroundColor: '#f7e057',
+                                    backgroundColor: '#ffd400',
                                 },
                             }}
                             sx={{
                                 '.Mui-selected': {
-                                    color: `#f7e057 !important`,
+                                    color: `#ffd400 !important`,
                                 },
                             }}
                         >
-                            <Tab label="개발철학" {...a11yProps(0)} sx={{ color: 'white' }} />
-                            <Tab label="Culture Fit" {...a11yProps(1)} sx={{ color: 'white' }} />
-                            <Tab label="관심사/기타" {...a11yProps(2)} sx={{ color: 'white' }} />
+                            <Tab label="개발철학" {...a11yProps(0)} sx={{ color: 'black' }} />
+                            <Tab label="Culture Fit" {...a11yProps(1)} sx={{ color: 'black' }} />
+                            <Tab label="관심사/기타" {...a11yProps(2)} sx={{ color: 'black' }} />
                         </Tabs>
                     </Box>
                     <CustomTabPanel value={value} index={0} style={style.minW800}>

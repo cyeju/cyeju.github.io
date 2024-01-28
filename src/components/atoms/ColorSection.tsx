@@ -13,10 +13,12 @@ export const ColorSection: FC<Props> = ({ children, color }) => {
             sx={{
                 display: 'table',
                 backgroundColor: color,
-                color: 'white',
+                color: 'black',
                 height: '100vh',
                 justifyContent: 'center',
                 textAlign: 'center',
+                scrollSnapAlign: 'start',
+                position: 'relative',
                 '& > *': {
                     display: 'table-cell',
                     verticalAlign: 'middle',

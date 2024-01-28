@@ -8,7 +8,7 @@ import { skillList } from '@/constants';
 
 export const Second: FC = () => {
     return (
-        <ColorSection color="#5D5DA8">
+        <ColorSection color="white">
             <div>
                 <Grid container justifyContent="center" sx={{ alignItems: 'center' }} rowSpacing={6}>
                     <Grid item xs={12} sm={6}>
@@ -29,7 +29,7 @@ export const Second: FC = () => {
                                     <Tooltip key={skillName} title={<h3>{comment}</h3>} placement="top" arrow>
                                         <Button
                                             component="a"
-                                            sx={{ color: '#fff', border: '1px solid white' }}
+                                            sx={{ color: 'black', border: '1px solid black' }}
                                             href={src}
                                             target="_blank"
                                         >

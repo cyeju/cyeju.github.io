@@ -9,7 +9,7 @@ export const CultureFit = () => {
                 <Stack gap={4} sx={{ width: '100%' }}>
                     <Stack>
                         <GlassCard>
-                            <h2 style={{ color: '#f7e057' }}>
+                            <h2 style={{ color: '#ffd400' }}>
                                 <span style={{ marginRight: '8px' }}>
                                     <TipsAndUpdates />
                                 </span>
@@ -24,7 +24,7 @@ export const CultureFit = () => {
                     </Stack>
                     <Stack>
                         <GlassCard>
-                            <h2 style={{ color: '#f7e057' }}>
+                            <h2 style={{ color: '#ffd400' }}>
                                 <span style={{ marginRight: '8px' }}>
                                     <TagFaces />
                                 </span>
@@ -37,7 +37,7 @@ export const CultureFit = () => {
                     </Stack>
                     <Stack>
                         <GlassCard>
-                            <h2 style={{ color: '#f7e057' }}>
+                            <h2 style={{ color: '#ffd400' }}>
                                 <span style={{ marginRight: '8px' }}>
                                     <Settings />
                                 </span>

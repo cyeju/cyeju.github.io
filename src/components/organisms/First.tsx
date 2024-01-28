@@ -29,7 +29,7 @@ const style = {
 
 export const First: FC = () => {
     return (
-        <ColorSection color="#BD3455">
+        <ColorSection color="white">
             <Typography
                 component="h1"
                 variant="h1"
@@ -49,7 +49,7 @@ export const First: FC = () => {
                         textShadow:
                             ' 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f7e057,0 0 92px #f7e057, 0 0 102px #f7e057, 0 0 112px #f7e057, 0 0 161px #f7e057',
                     }}
-                    animate={{ color: ['#bc7f7f', '#f19c9c'] }}
+                    animate={{ color: ['#ffb400', '#ffd400'] }}
                     transition={{ duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
                 >
                     개발자 최예주
