@@ -29,7 +29,7 @@ export const Fourth: FC = () => {
 
     return (
         <ColorSection color="white">
-            <div>
+            <div style={{ paddingTop: 48 }}>
                 <Stack sx={{ alignItems: 'center' }}>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                         <Tabs

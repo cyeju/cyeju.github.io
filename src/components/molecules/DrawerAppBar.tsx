@@ -24,8 +24,8 @@ const drawerWidth = 240;
 
 const style = {
     button: {
-        color: '#fff',
-        border: '1px solid white',
+        color: 'black',
+        border: '1px solid black',
         marginLeft: '8px',
     },
 } as const;
@@ -48,14 +48,14 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ color: 'white', mr: 2, display: { sm: 'none' } }}
+                        sx={{ color: 'black', mr: 2, display: { sm: 'none' } }}
                     >
                         <Menu />
                     </IconButton>
                     <Typography
                         variant="h5"
                         component="div"
-                        sx={{ color: 'white', flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                        sx={{ color: 'black', flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
                         Yeju Choi
                     </Typography>

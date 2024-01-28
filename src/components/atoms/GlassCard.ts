@@ -7,7 +7,7 @@ export const GlassCard = styled.div`
     justify-content: center;
     gap: 10px;
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 0 20px 0 rgba(255, 180, 0, 0.3);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
