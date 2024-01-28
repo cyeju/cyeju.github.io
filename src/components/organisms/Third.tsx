@@ -1,7 +1,6 @@
 import type { FC } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ColorSection, CircleModel, WorkCard } from '@/components/atoms';
+import { ColorSection, CircleModel, WorkCard, WorkImage } from '@/components/atoms';
 import { workList } from '@/constants';
 
 const style = {
@@ -16,10 +15,6 @@ const style = {
         top: '50%',
         width: '100%',
         height: 440,
-    },
-    img: {
-        marginBottom: 10,
-        objectFit: 'cover',
     },
 } as const;
 
@@ -37,7 +32,8 @@ export const Third: FC = () => {
                     return (
                         <WorkCard key={title}>
                             {/* image 300 */}
-                            <Image alt="이미지" src={imageSrc} width={500} height={300} style={style.img} />
+                            <WorkImage src={imageSrc} />
+                            {/* <Image alt="이미지" src={imageSrc} width={500} height={300} style={style.img} /> */}
                             {/* text 140 */}
                             {title}
                             {/* scroll 10 */}
