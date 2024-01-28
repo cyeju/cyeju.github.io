@@ -1,9 +1,8 @@
-// import { useState } from 'react';
-import { type FC } from 'react';
+import { useState, type FC } from 'react';
 import Image from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
-// import { motion } from 'framer-motion';
-// import { Typography } from '@mui/material';
+import { motion } from 'framer-motion';
+import { Typography } from '@mui/material';
 
 interface Props {
     src: string | StaticImport;
@@ -36,15 +35,13 @@ const style = {
 } as const;
 
 export const WorkImage: FC<Props> = ({ src, title }) => {
-    // const [isHovering, setIsHovered] = useState(false);
-    // const onMouseEnter = () => setIsHovered(true);
-    // const onMouseLeave = () => setIsHovered(false);
+    const [isHovering, setIsHovered] = useState(false);
+    const onMouseEnter = () => setIsHovered(true);
+    const onMouseLeave = () => setIsHovered(false);
 
     return (
         <>
-            {src}
-            {title}
-            {/* {isHovering && (
+            {isHovering && (
                 <Typography
                     component={motion.h4}
                     variant="h4"
@@ -55,16 +52,16 @@ export const WorkImage: FC<Props> = ({ src, title }) => {
                 >
                     {title}
                 </Typography>
-            )} */}
+            )}
             <div style={style.imgWrap}>
                 <Image
                     alt="이미지"
                     src={src}
-                    // style={isHovering ? { ...style.img, ...style.img_hover } : style.img}
+                    style={isHovering ? { ...style.img, ...style.img_hover } : style.img}
                     width={500}
                     height={300}
-                    // onMouseEnter={onMouseEnter}
-                    // onMouseLeave={onMouseLeave}
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
                 />
             </div>
         </>
