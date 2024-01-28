@@ -6,3 +6,4 @@ export * from './DetailText';
 export * from './GlassCard';
 export * from './SubText';
 export * from './Title';
+export * from './WorkCard';

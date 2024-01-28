@@ -14,6 +14,7 @@ export const ColorSection: FC<Props> = ({ children, color }) => {
                 display: 'table',
                 backgroundColor: color,
                 color: 'black',
+                overflow: 'hidden',
                 height: '100vh',
                 justifyContent: 'center',
                 textAlign: 'center',
