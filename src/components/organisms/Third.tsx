@@ -1,8 +1,9 @@
-import type { FC } from 'react';
+import { useState, type FC } from 'react';
 import { motion } from 'framer-motion';
 import { Typography } from '@mui/material';
 import { ColorSection, CircleModel, WorkCard, WorkImage } from '@/components/atoms';
 import { workList } from '@/constants';
+import { WorkModal } from '../molecules/WorkModal';
 
 const style = {
     scroll: {
@@ -20,6 +21,11 @@ const style = {
 } as const;
 
 export const Third: FC = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return (
         <ColorSection color="white">
             <CircleModel color="#ffd400" />
@@ -33,7 +39,7 @@ export const Third: FC = () => {
                     return (
                         <WorkCard key={title}>
                             {/* image 300 */}
-                            <WorkImage src={imageSrc} title={title} />
+                            <WorkImage src={imageSrc} title={title} openModal={openModal} />
                             {/* text 140 */}
                             <Typography>{classification}</Typography>
                             <Typography>{comment}</Typography>
@@ -42,6 +48,7 @@ export const Third: FC = () => {
                     );
                 })}
             </motion.div>
+            <WorkModal isModalOpen={isModalOpen} closeModal={closeModal} />
         </ColorSection>
     );
 };
