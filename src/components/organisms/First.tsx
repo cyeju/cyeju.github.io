@@ -6,13 +6,6 @@ import { Typography } from '@mui/material';
 import { ColorSection } from '@/components/atoms';
 
 const style = {
-    image: {
-        position: 'absolute',
-        zIndex: '100',
-        left: '50%',
-        top: '29%',
-        height: '300px',
-    },
     h2: {
         position: 'absolute',
         zIndex: '101',
