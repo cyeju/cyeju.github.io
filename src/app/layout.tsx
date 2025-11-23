@@ -1,10 +1,7 @@
 import type { NextPage, Metadata } from 'next';
 import type { PropsWithChildren } from 'react';
-import { Inter } from 'next/font/google';
 import '@/assets/fonts/font.css';
-import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
     title: 'Yeju Choi',
@@ -14,7 +11,7 @@ export const metadata: Metadata = {
 const RootLayout: NextPage<PropsWithChildren> = ({ children }) => {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body>{children}</body>
         </html>
     );
 };
