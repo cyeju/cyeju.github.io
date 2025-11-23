@@ -18,7 +18,6 @@ export const ColorSection: FC<Props> = ({ children, color }) => {
                 height: '100vh',
                 justifyContent: 'center',
                 textAlign: 'center',
-                scrollSnapAlign: 'start',
                 position: 'relative',
                 '& > *': {
                     display: 'table-cell',
