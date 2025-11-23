@@ -3,7 +3,7 @@
 import type { FC } from 'react';
 import { motion } from 'framer-motion';
 import { Typography } from '@mui/material';
-import { ColorSection } from '@/components/atoms';
+import ColorSection from '@/components/atoms/ColorSection';
 
 const style = {
     h2: {
@@ -20,7 +20,7 @@ const style = {
     },
 } as const;
 
-export const First: FC = () => {
+const First: FC = () => {
     return (
         <ColorSection color="white">
             <Typography
@@ -52,3 +52,5 @@ export const First: FC = () => {
         </ColorSection>
     );
 };
+
+export default First;

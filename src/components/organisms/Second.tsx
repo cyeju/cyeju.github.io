@@ -3,10 +3,10 @@
 import type { FC } from 'react';
 import { motion } from 'framer-motion';
 import { Typography, Grid, Tooltip, Button } from '@mui/material';
-import { ColorSection } from '@/components/atoms';
+import ColorSection from '@/components/atoms/ColorSection';
 import { skillList } from '@/constants';
 
-export const Second: FC = () => {
+const Second: FC = () => {
     return (
         <ColorSection color="white">
             <div>
@@ -45,3 +45,5 @@ export const Second: FC = () => {
         </ColorSection>
     );
 };
+
+export default Second;

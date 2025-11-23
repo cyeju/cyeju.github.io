@@ -16,7 +16,7 @@ const style = {
     },
 } as const;
 
-export const Footer: FC = () => {
+const Footer: FC = () => {
     return (
         <Container component="footer" sx={style.container}>
             <a
@@ -31,3 +31,5 @@ export const Footer: FC = () => {
         </Container>
     );
 };
+
+export default Footer;

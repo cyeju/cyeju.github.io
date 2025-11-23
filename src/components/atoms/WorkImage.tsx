@@ -36,7 +36,7 @@ const style = {
     },
 } as const;
 
-export const WorkImage: FC<Props> = ({ src, title, openModal }) => {
+const WorkImage: FC<Props> = ({ src, title, openModal }) => {
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
@@ -70,3 +70,5 @@ export const WorkImage: FC<Props> = ({ src, title, openModal }) => {
         </>
     );
 };
+
+export default WorkImage;

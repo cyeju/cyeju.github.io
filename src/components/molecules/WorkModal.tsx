@@ -18,7 +18,7 @@ const style = {
     },
 } as const;
 
-export const WorkModal: FC<Props> = ({ isModalOpen, closeModal }) => {
+const WorkModal: FC<Props> = ({ isModalOpen, closeModal }) => {
     return (
         <Modal open={isModalOpen} onClose={closeModal}>
             <Container sx={style.modal} maxWidth="md">
@@ -29,3 +29,5 @@ export const WorkModal: FC<Props> = ({ isModalOpen, closeModal }) => {
         </Modal>
     );
 };
+
+export default WorkModal;

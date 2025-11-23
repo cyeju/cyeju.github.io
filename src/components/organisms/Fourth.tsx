@@ -2,8 +2,11 @@
 
 import { useState, type FC, type SyntheticEvent } from 'react';
 import { Stack, Box, Tabs, Tab } from '@mui/material';
-import { ColorSection } from '@/components/atoms';
-import { CustomTabPanel, DevPhilosophy, CultureFit, Interests } from '@/components/molecules';
+import ColorSection from '@/components/atoms/ColorSection';
+import CultureFit from '@/components/molecules/CultureFit';
+import CustomTabPanel from '@/components/molecules/CustomTabPanel';
+import DevPhilosophy from '@/components/molecules/DevPhilosophy';
+import Interests from '@/components/molecules/Interests';
 
 const a11yProps = (index: number) => {
     return {
@@ -20,7 +23,7 @@ const style = {
     },
 } as const;
 
-export const Fourth: FC = () => {
+const Fourth: FC = () => {
     const [value, setValue] = useState(0);
 
     const handleChange = (_event: SyntheticEvent, newValue: number) => {
@@ -66,3 +69,5 @@ export const Fourth: FC = () => {
         </ColorSection>
     );
 };
+
+export default Fourth;

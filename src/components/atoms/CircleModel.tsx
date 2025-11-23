@@ -4,7 +4,8 @@ import { Container } from '@mui/material';
 interface Props {
     color: string;
 }
-export const CircleModel: FC<Props> = ({ color }) => {
+
+const CircleModel: FC<Props> = ({ color }) => {
     return (
         <Container
             disableGutters
@@ -22,3 +23,5 @@ export const CircleModel: FC<Props> = ({ color }) => {
         />
     );
 };
+
+export default CircleModel;

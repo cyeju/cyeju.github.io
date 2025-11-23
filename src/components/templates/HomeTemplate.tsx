@@ -1,7 +1,10 @@
 import type { FC } from 'react';
-import { First, Fourth, Second, Third } from '@/components/organisms';
+import First from '@/components/organisms/First';
+import Second from '@/components/organisms/Second';
+import Third from '@/components/organisms/Third';
+import Fourth from '@/components/organisms/Fourth';
 
-export const HomeTemplate: FC = () => {
+const HomeTemplate: FC = () => {
     return (
         <>
             <First />
@@ -11,3 +14,5 @@ export const HomeTemplate: FC = () => {
         </>
     );
 };
+
+export default HomeTemplate;

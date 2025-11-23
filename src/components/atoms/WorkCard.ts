@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const WorkCard = styled.div`
+const WorkCard = styled.div`
     cursor: pointer;
     text-align: left;
     position: relative;
@@ -9,3 +9,5 @@ export const WorkCard = styled.div`
     min-width: 500px;
     height: 340px;
 `;
+
+export default WorkCard;

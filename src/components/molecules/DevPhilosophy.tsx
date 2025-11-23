@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import { Grid, Stack } from '@mui/material';
 import { AutoFixHigh, Rule, Build } from '@mui/icons-material';
-import { GlassCard } from '@/components/atoms';
+import GlassCard from '@/components/atoms/GlassCard';
 
 const style = {
     text: {
@@ -19,7 +19,7 @@ const style = {
     },
 } as const;
 
-export const DevPhilosophy: FC = () => {
+const DevPhilosophy: FC = () => {
     return (
         <Grid container spacing={2}>
             <Grid item xs={12} sm={7}>
@@ -108,3 +108,5 @@ export const DevPhilosophy: FC = () => {
         </Grid>
     );
 };
+
+export default DevPhilosophy;

@@ -4,7 +4,8 @@ import { Container } from '@mui/material';
 interface Props extends PropsWithChildren {
     color: string;
 }
-export const ColorSection: FC<Props> = ({ children, color }) => {
+
+const ColorSection: FC<Props> = ({ children, color }) => {
     return (
         <Container
             disableGutters
@@ -29,3 +30,5 @@ export const ColorSection: FC<Props> = ({ children, color }) => {
         </Container>
     );
 };
+
+export default ColorSection;

@@ -30,7 +30,7 @@ const style = {
     },
 } as const;
 
-export const DrawerAppBar: FC<Props> = ({ window }) => {
+const DrawerAppBar: FC<Props> = ({ window }) => {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const handleDrawerToggle = () => {
@@ -102,3 +102,5 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
         </>
     );
 };
+
+export default DrawerAppBar;

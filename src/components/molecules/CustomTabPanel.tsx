@@ -7,7 +7,7 @@ interface TabPanelProps extends PropsWithChildren {
     style?: CSSProperties;
 }
 
-export const CustomTabPanel: FC<TabPanelProps> = (props: TabPanelProps) => {
+const CustomTabPanel: FC<TabPanelProps> = (props: TabPanelProps) => {
     const { children, value, index, ...other } = props;
 
     return (
@@ -22,3 +22,5 @@ export const CustomTabPanel: FC<TabPanelProps> = (props: TabPanelProps) => {
         </div>
     );
 };
+
+export default CustomTabPanel;

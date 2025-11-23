@@ -1,9 +1,12 @@
 import { useState, type FC } from 'react';
 import { motion } from 'framer-motion';
 import { Typography } from '@mui/material';
-import { ColorSection, CircleModel, WorkCard, WorkImage } from '@/components/atoms';
+import ColorSection from '@/components/atoms/ColorSection';
+import WorkCard from '@/components/atoms/WorkCard';
+import WorkImage from '@/components/atoms/WorkImage';
+import CircleModel from '@/components/atoms/CircleModel';
+import WorkModal from '@/components/molecules/WorkModal';
 import { workList } from '@/constants';
-import { WorkModal } from '../molecules/WorkModal';
 
 const style = {
     scroll: {
@@ -20,7 +23,7 @@ const style = {
     },
 } as const;
 
-export const Third: FC = () => {
+const Third: FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
@@ -52,3 +55,5 @@ export const Third: FC = () => {
         </ColorSection>
     );
 };
+
+export default Third;

@@ -1,8 +1,8 @@
 import { Grid, Stack } from '@mui/material';
 import { TipsAndUpdates, TagFaces, Settings } from '@mui/icons-material';
-import { GlassCard } from '@/components/atoms';
+import GlassCard from '@/components/atoms/GlassCard';
 
-export const Interests = () => {
+const Interests = () => {
     return (
         <Grid container sx={{ width: '100%' }}>
             <Grid item xs={12} sx={{ width: '100%' }}>
@@ -57,3 +57,5 @@ export const Interests = () => {
         </Grid>
     );
 };
+
+export default Interests;
