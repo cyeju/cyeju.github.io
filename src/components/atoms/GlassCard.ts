@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const GlassCard = styled.div`
+const GlassCard = styled.div`
     height: 192px;
     display: flex;
     flex-direction: column;
@@ -13,3 +13,5 @@ export const GlassCard = styled.div`
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 `;
+
+export default GlassCard;

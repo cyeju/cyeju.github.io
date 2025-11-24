@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import { Container } from '@mui/material';
 
 const style = {
     container: {
@@ -16,9 +15,9 @@ const style = {
     },
 } as const;
 
-export const Footer: FC = () => {
+const Footer: FC = () => {
     return (
-        <Container component="footer" sx={style.container}>
+        <div>
             <a
                 href="https://github.com/brom5033/brom5033.github.io/blob/main/LICENSE"
                 target="_blank"
@@ -28,6 +27,8 @@ export const Footer: FC = () => {
                 MIT LICENSE
             </a>
             2024 by cyeju Yeju Choi
-        </Container>
+        </div>
     );
 };
+
+export default Footer;

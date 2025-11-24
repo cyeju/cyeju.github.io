@@ -1,47 +1,33 @@
 'use client';
 
 import type { FC } from 'react';
-import { motion } from 'framer-motion';
-import { Typography, Grid, Tooltip, Button } from '@mui/material';
-import { ColorSection } from '@/components/atoms';
+import ColorSection from '@/components/atoms/ColorSection';
 import { skillList } from '@/constants';
 
-export const Second: FC = () => {
+const Second: FC = () => {
     return (
-        <ColorSection color="white">
+        <ColorSection>
             <div>
-                <Grid container justifyContent="center" sx={{ alignItems: 'center' }} rowSpacing={6}>
-                    <Grid item xs={12} sm={6}>
-                        <Typography
-                            component={motion.h1}
-                            variant="h1"
-                            initial={{ translateX: -200, opacity: 0 }}
-                            whileInView={{ translateX: 0, opacity: 1 }}
-                            transition={{ duration: 1 }}
-                        >
-                            기술스택
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12} sm={5}>
-                        <Grid container gap="8px" sx={{ px: '24px' }}>
-                            {skillList.map(({ skillName, src, comment }) => {
-                                return (
-                                    <Tooltip key={skillName} title={<h3>{comment}</h3>} placement="top" arrow>
-                                        <Button
-                                            component="a"
-                                            sx={{ color: 'black', border: '1px solid black' }}
-                                            href={src}
-                                            target="_blank"
-                                        >
-                                            {skillName}
-                                        </Button>
-                                    </Tooltip>
-                                );
-                            })}
-                        </Grid>
-                    </Grid>
-                </Grid>
+                <span>기술스택</span>
+            </div>
+            <div>
+                <div>
+                    {skillList.map(({ skillName, comment }) => {
+                        return (
+                            <div key={skillName} className="relative group inline-block">
+                                <button type="submit" className="px-3 py-2 bg-blue-600 text-white rounded">
+                                    {skillName}
+                                </button>
+                                <div className="absolute left-1/2 -translate-x-1/2 -top-10 whitespace-nowrap rounded bg-gray-800 text-white text-sm px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                    <button type="submit">{comment}</button>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </ColorSection>
     );
 };
+
+export default Second;

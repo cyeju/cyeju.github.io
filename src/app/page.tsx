@@ -1,9 +1,9 @@
 'use client';
 
 import type { NextPage } from 'next';
-import { DrawerAppBar } from '@/components/molecules';
-import { Footer } from '@/components/organisms';
-import { HomeTemplate } from '@/components/templates';
+import DrawerAppBar from '@/components/molecules/DrawerAppBar';
+import Footer from '@/components/organisms/Footer';
+import HomeTemplate from '@/components/templates/HomeTemplate';
 
 const Home: NextPage = () => {
     return (

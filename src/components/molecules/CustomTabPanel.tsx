@@ -1,5 +1,4 @@
 import type { FC, CSSProperties, PropsWithChildren } from 'react';
-import { Box } from '@mui/material';
 
 interface TabPanelProps extends PropsWithChildren {
     index: number;
@@ -7,7 +6,7 @@ interface TabPanelProps extends PropsWithChildren {
     style?: CSSProperties;
 }
 
-export const CustomTabPanel: FC<TabPanelProps> = (props: TabPanelProps) => {
+const CustomTabPanel: FC<TabPanelProps> = (props: TabPanelProps) => {
     const { children, value, index, ...other } = props;
 
     return (
@@ -18,7 +17,9 @@ export const CustomTabPanel: FC<TabPanelProps> = (props: TabPanelProps) => {
             aria-labelledby={`simple-tab-${index}`}
             {...other}
         >
-            {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+            {value === index && <div>{children}</div>}
         </div>
     );
 };
+
+export default CustomTabPanel;

@@ -1,9 +1,11 @@
 import { useState, type FC } from 'react';
 import { motion } from 'framer-motion';
-import { Typography } from '@mui/material';
-import { ColorSection, CircleModel, WorkCard, WorkImage } from '@/components/atoms';
+import ColorSection from '@/components/atoms/ColorSection';
+import WorkCard from '@/components/atoms/WorkCard';
+import WorkImage from '@/components/atoms/WorkImage';
+import CircleModel from '@/components/atoms/CircleModel';
+import WorkModal from '@/components/molecules/WorkModal';
 import { workList } from '@/constants';
-import { WorkModal } from '../molecules/WorkModal';
 
 const style = {
     scroll: {
@@ -20,15 +22,14 @@ const style = {
     },
 } as const;
 
-export const Third: FC = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+const Third: FC = () => {
+    const [, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
-    const closeModal = () => setIsModalOpen(false);
 
     return (
-        <ColorSection color="white">
-            <CircleModel color="#ffd400" />
+        <ColorSection>
+            <CircleModel />
             <motion.div
                 style={style.scroll}
                 initial={{ translateY: 200, opacity: 0 }}
@@ -38,17 +39,16 @@ export const Third: FC = () => {
                 {workList.map(({ imageSrc, title, classification, comment }) => {
                     return (
                         <WorkCard key={title}>
-                            {/* image 300 */}
                             <WorkImage src={imageSrc} title={title} openModal={openModal} />
-                            {/* text 140 */}
-                            <Typography>{classification}</Typography>
-                            <Typography>{comment}</Typography>
-                            {/* scroll 10 */}
+                            <span>{classification}</span>
+                            <span>{comment}</span>
                         </WorkCard>
                     );
                 })}
             </motion.div>
-            <WorkModal isModalOpen={isModalOpen} closeModal={closeModal} />
+            <WorkModal />
         </ColorSection>
     );
 };
+
+export default Third;
