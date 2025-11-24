@@ -5,7 +5,7 @@ import ColorSection from '@/components/atoms/ColorSection';
 
 const First: FC = () => {
     return (
-        <ColorSection color="white">
+        <ColorSection>
             <h1 className="text-3xl font-bold underline">Hello world!</h1>
         </ColorSection>
     );
