@@ -22,7 +22,7 @@ const style = {
     },
 } as const;
 
-const Third: FC = () => {
+const Projects: FC = () => {
     const [, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
@@ -51,4 +51,4 @@ const Third: FC = () => {
     );
 };
 
-export default Third;
+export default Projects;

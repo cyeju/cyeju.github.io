@@ -4,7 +4,7 @@ import type { FC } from 'react';
 import ColorSection from '@/components/atoms/ColorSection';
 import { skillList } from '@/constants';
 
-const Second: FC = () => {
+const Skills: FC = () => {
     return (
         <ColorSection>
             <div>
@@ -30,4 +30,4 @@ const Second: FC = () => {
     );
 };
 
-export default Second;
+export default Skills;

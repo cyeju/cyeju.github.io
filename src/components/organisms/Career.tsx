@@ -7,7 +7,7 @@ import CustomTabPanel from '@/components/molecules/CustomTabPanel';
 import DevPhilosophy from '@/components/molecules/DevPhilosophy';
 import Interests from '@/components/molecules/Interests';
 
-const Fourth: FC = () => {
+const Career: FC = () => {
     const [value] = useState(0);
 
     return (
@@ -58,4 +58,4 @@ const Fourth: FC = () => {
     );
 };
 
-export default Fourth;
+export default Career;

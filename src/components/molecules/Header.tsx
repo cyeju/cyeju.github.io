@@ -1,7 +1,7 @@
 import { useState, type FC } from 'react';
 import { menuList } from '@/constants';
 
-const DrawerAppBar: FC = () => {
+const Header: FC = () => {
     const [, setMobileOpen] = useState(false);
 
     const handleDrawerToggle = () => {
@@ -41,4 +41,4 @@ const DrawerAppBar: FC = () => {
     );
 };
 
-export default DrawerAppBar;
+export default Header;
