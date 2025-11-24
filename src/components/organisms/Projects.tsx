@@ -1,7 +1,6 @@
 import { useState, type FC } from 'react';
 import { motion } from 'framer-motion';
-import ColorSection from '@/components/atoms/ColorSection';
-import WorkCard from '@/components/atoms/WorkCard';
+import Section from '@/components/atoms/Section';
 import WorkImage from '@/components/atoms/WorkImage';
 import CircleModel from '@/components/atoms/CircleModel';
 import WorkModal from '@/components/molecules/WorkModal';
@@ -13,7 +12,7 @@ const Projects: FC = () => {
     const openModal = () => setIsModalOpen(true);
 
     return (
-        <ColorSection>
+        <Section>
             <CircleModel />
             <motion.div
                 initial={{ translateY: 200, opacity: 0 }}
@@ -22,16 +21,16 @@ const Projects: FC = () => {
             >
                 {workList.map(({ imageSrc, title, classification, comment }) => {
                     return (
-                        <WorkCard key={title}>
+                        <div key={title}>
                             <WorkImage src={imageSrc} title={title} openModal={openModal} />
                             <span>{classification}</span>
                             <span>{comment}</span>
-                        </WorkCard>
+                        </div>
                     );
                 })}
             </motion.div>
             <WorkModal />
-        </ColorSection>
+        </Section>
     );
 };
 

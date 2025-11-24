@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, type FC } from 'react';
-import ColorSection from '@/components/atoms/ColorSection';
+import Section from '@/components/atoms/Section';
 import CultureFit from '@/components/molecules/CultureFit';
 import CustomTabPanel from '@/components/molecules/CustomTabPanel';
 import DevPhilosophy from '@/components/molecules/DevPhilosophy';
@@ -11,7 +11,7 @@ const Career: FC = () => {
     const [value] = useState(0);
 
     return (
-        <ColorSection>
+        <Section>
             <div style={{ paddingTop: 48 }}>
                 <div>
                     <div className="text-sm font-medium text-center text-body border-b border-default">
@@ -54,7 +54,7 @@ const Career: FC = () => {
                     </CustomTabPanel>
                 </div>
             </div>
-        </ColorSection>
+        </Section>
     );
 };
 

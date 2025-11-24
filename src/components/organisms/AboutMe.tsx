@@ -1,13 +1,13 @@
 'use client';
 
 import type { FC } from 'react';
-import ColorSection from '@/components/atoms/ColorSection';
+import Section from '@/components/atoms/Section';
 
 const AboutMe: FC = () => {
     return (
-        <ColorSection>
+        <Section>
             <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        </ColorSection>
+        </Section>
     );
 };
 

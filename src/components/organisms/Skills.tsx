@@ -1,12 +1,12 @@
 'use client';
 
 import type { FC } from 'react';
-import ColorSection from '@/components/atoms/ColorSection';
+import Section from '@/components/atoms/Section';
 import { skillList } from '@/constants/skillList';
 
 const Skills: FC = () => {
     return (
-        <ColorSection>
+        <Section>
             <div>
                 <span>기술스택</span>
             </div>
@@ -26,7 +26,7 @@ const Skills: FC = () => {
                     })}
                 </div>
             </div>
-        </ColorSection>
+        </Section>
     );
 };
 
