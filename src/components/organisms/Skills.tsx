@@ -2,7 +2,7 @@
 
 import type { FC } from 'react';
 import ColorSection from '@/components/atoms/ColorSection';
-import { skillList } from '@/constants';
+import { skillList } from '@/constants/skillList';
 
 const Skills: FC = () => {
     return (

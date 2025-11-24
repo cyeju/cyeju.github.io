@@ -1,5 +1,5 @@
 import { useState, type FC } from 'react';
-import { menuList } from '@/constants';
+import { menuList } from '@/constants/menuList';
 
 const Header: FC = () => {
     const [, setMobileOpen] = useState(false);
