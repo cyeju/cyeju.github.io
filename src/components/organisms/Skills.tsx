@@ -6,7 +6,7 @@ import { skillList } from '@/constants/skillList';
 
 const Skills: FC = () => {
     return (
-        <Section>
+        <Section id="skills">
             <div>
                 <span>기술스택</span>
             </div>

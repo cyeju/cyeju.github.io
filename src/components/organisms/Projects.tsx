@@ -12,7 +12,7 @@ const Projects: FC = () => {
     const openModal = () => setIsModalOpen(true);
 
     return (
-        <Section>
+        <Section id="projects">
             <CircleModel />
             <motion.div
                 initial={{ translateY: 200, opacity: 0 }}

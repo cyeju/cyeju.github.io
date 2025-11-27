@@ -8,22 +8,22 @@ const Header: FC = () => {
                 <div className="flex justify-between items-center w-full max-w-screen-xl">
                     <span>Yeju Choi</span>
                     <div className="flex items-center gap-1 bg-white">
-                        <a href="/#">
+                        <a href="#about">
                             <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
                                 About me
                             </span>
                         </a>
-                        <a href="/#">
+                        <a href="#skills">
                             <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
                                 Skills
                             </span>
                         </a>
-                        <a href="/#">
+                        <a href="#career">
                             <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
                                 Career
                             </span>
                         </a>
-                        <a href="/#">
+                        <a href="#projects">
                             <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
                                 Projects
                             </span>
