@@ -4,10 +4,10 @@ import { FaGithub } from 'react-icons/fa';
 const Header: FC = () => {
     return (
         <nav className="sticky top-0 bg-white shadow">
-            <div className="flex justify-center items-center h-12">
-                <div className="flex justify-between w-full max-w-screen-xl">
+            <div className="flex justify-center h-12 px-4">
+                <div className="flex justify-between items-center w-full max-w-screen-xl">
                     <span>Yeju Choi</span>
-                    <div className="flex items-center gap-6 bg-white">
+                    <div className="flex items-center gap-1 bg-white">
                         <a href="/#">
                             <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
                                 About me
