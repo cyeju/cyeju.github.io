@@ -1,43 +1,44 @@
-import { useState, type FC } from 'react';
-import { menuList } from '@/constants/menuList';
+import { type FC } from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 const Header: FC = () => {
-    const [, setMobileOpen] = useState(false);
-
-    const handleDrawerToggle = () => {
-        setMobileOpen((prevState) => !prevState);
-    };
-
     return (
-        <>
-            <div>
-                <div>Menu Icon</div>
-                <span>Yeju Choi</span>
-                <div>
-                    {menuList.map(({ menuName }) => (
-                        <button key={menuName} type="submit">
-                            {menuName}
+        <nav className="sticky top-0 bg-white shadow">
+            <div className="flex justify-center items-center h-12">
+                <div className="flex justify-between w-full max-w-screen-xl">
+                    <span>Yeju Choi</span>
+                    <div className="flex items-center gap-6 bg-white">
+                        <a href="/#">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                                About me
+                            </span>
+                        </a>
+                        <a href="/#">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                                Skills
+                            </span>
+                        </a>
+                        <a href="/#">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                                Career
+                            </span>
+                        </a>
+                        <a href="/#">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                                Projects
+                            </span>
+                        </a>
+                        <button
+                            type="button"
+                            className="cursor-pointer p-2 rounded-full"
+                            onClick={() => window.open('https://github.com/cyeju', '_blank')}
+                        >
+                            <FaGithub className="transition-colors duration-300 transform w-5 h-5 text-gray-900 hover:text-purple-800" />
                         </button>
-                    ))}
+                    </div>
                 </div>
             </div>
-            <nav>
-                <button type="button" onClick={handleDrawerToggle} className="flex flex-col items-start">
-                    <span>Yeju Choi</span>
-                    <hr className="w-full my-1" />
-                </button>
-
-                <ul className="mt-2">
-                    {menuList.map(({ menuName }) => (
-                        <li key={menuName}>
-                            <button type="submit" className="py-1 text-left w-full">
-                                {menuName}
-                            </button>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-        </>
+        </nav>
     );
 };
 
