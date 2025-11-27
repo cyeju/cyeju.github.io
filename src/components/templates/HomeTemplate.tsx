@@ -1,16 +1,16 @@
 import type { FC } from 'react';
-import First from '@/components/organisms/First';
-import Second from '@/components/organisms/Second';
-import Third from '@/components/organisms/Third';
-import Fourth from '@/components/organisms/Fourth';
+import AboutMe from '@/components/organisms/AboutMe';
+import Skills from '@/components/organisms/Skills';
+import Career from '@/components/organisms/Career';
+import Projects from '@/components/organisms/Projects';
 
 const HomeTemplate: FC = () => {
     return (
         <>
-            <First />
-            <Second />
-            <Third />
-            <Fourth />
+            <AboutMe />
+            <Skills />
+            <Career />
+            <Projects />
         </>
     );
 };

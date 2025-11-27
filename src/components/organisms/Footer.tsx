@@ -1,33 +1,12 @@
 import type { FC } from 'react';
 
-const style = {
-    container: {
-        py: '30px',
-        textAlign: 'center',
-        color: 'white',
-        backgroundColor: '#333',
-        minWidth: '100%',
-    },
-    link: {
-        textDecoration: 'none',
-        color: '#f7e057',
-        marginRight: '3px',
-    },
-} as const;
-
 const Footer: FC = () => {
     return (
-        <div>
-            <a
-                href="https://github.com/brom5033/brom5033.github.io/blob/main/LICENSE"
-                target="_blank"
-                rel="noreferrer"
-                style={style.link}
-            >
-                MIT LICENSE
-            </a>
-            2024 by cyeju Yeju Choi
-        </div>
+        <footer className="flex justify-center bg-gray-700 shadow">
+            <div className="flex justify-center items-center w-full max-w-3xl py-1 px-4">
+                <p className="items-center gap-2 text-white text-xs">© 2025 Yeju Choi. All rights reserved.</p>
+            </div>
+        </footer>
     );
 };
 
