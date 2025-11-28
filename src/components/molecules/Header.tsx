@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 
 const Header: FC = () => {
     return (
-        <nav className="sticky top-0 bg-white shadow">
+        <nav className="sticky top-0 bg-white shadow z-10">
             <div className="flex justify-center h-12 px-4">
                 <div className="flex justify-between items-center w-full max-w-screen-xl">
                     <span>Yeju Choi</span>
@@ -18,14 +18,14 @@ const Header: FC = () => {
                                 Skills
                             </span>
                         </a>
-                        <a href="#projects">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
-                                Projects
-                            </span>
-                        </a>
                         <a href="#career">
                             <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
                                 Career
+                            </span>
+                        </a>
+                        <a href="#projects">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
+                                Projects
                             </span>
                         </a>
                         <button

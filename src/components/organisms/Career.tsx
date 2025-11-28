@@ -11,7 +11,7 @@ const Career: FC = () => {
     const [value] = useState(0);
 
     return (
-        <Section id="career">
+        <Section id="career" bgColor="black">
             <div style={{ paddingTop: 48 }}>
                 <div>
                     <div className="text-sm font-medium text-center text-body border-b border-default">
