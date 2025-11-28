@@ -1,6 +1,5 @@
 import type { NextPage, Metadata } from 'next';
 import type { PropsWithChildren } from 'react';
-import '@/assets/fonts/font.css';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {

@@ -9,23 +9,23 @@ const Header: FC = () => {
                     <span>Yeju Choi</span>
                     <div className="flex items-center gap-1 bg-white">
                         <a href="#about">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
                                 About me
                             </span>
                         </a>
                         <a href="#skills">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
                                 Skills
                             </span>
                         </a>
-                        <a href="#career">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
-                                Career
+                        <a href="#projects">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
+                                Projects
                             </span>
                         </a>
-                        <a href="#projects">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
-                                Projects
+                        <a href="#career">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
+                                Career
                             </span>
                         </a>
                         <button

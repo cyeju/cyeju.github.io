@@ -9,8 +9,8 @@ const HomeTemplate: FC = () => {
         <>
             <AboutMe />
             <Skills />
-            <Career />
             <Projects />
+            <Career />
         </>
     );
 };
