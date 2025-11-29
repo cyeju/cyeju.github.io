@@ -3,28 +3,28 @@ import { FaGithub } from 'react-icons/fa';
 
 const Header: FC = () => {
     return (
-        <nav className="sticky top-0 bg-white shadow">
+        <nav className="sticky top-0 bg-white shadow z-10">
             <div className="flex justify-center h-12 px-4">
                 <div className="flex justify-between items-center w-full max-w-screen-xl">
                     <span>Yeju Choi</span>
                     <div className="flex items-center gap-1 bg-white">
-                        <a href="/#">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                        <a href="#about">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
                                 About me
                             </span>
                         </a>
-                        <a href="/#">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                        <a href="#skills">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
                                 Skills
                             </span>
                         </a>
-                        <a href="/#">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                        <a href="#career">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
                                 Career
                             </span>
                         </a>
-                        <a href="/#">
-                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-500 md:mx-4 md:my-0">
+                        <a href="#projects">
+                            <span className="my-2 transition-colors duration-300 transform text-sm text-gray-600 hover:text-blue-600 md:mx-4 md:my-0">
                                 Projects
                             </span>
                         </a>
