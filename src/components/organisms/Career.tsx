@@ -1,59 +1,12 @@
 'use client';
 
-import { useState, type FC } from 'react';
+import { type FC } from 'react';
 import Section from '@/components/atoms/Section';
-import CultureFit from '@/components/molecules/CultureFit';
-import CustomTabPanel from '@/components/molecules/CustomTabPanel';
-import DevPhilosophy from '@/components/molecules/DevPhilosophy';
-import Interests from '@/components/molecules/Interests';
 
 const Career: FC = () => {
-    const [value] = useState(0);
-
     return (
         <Section id="career" bgColor="black">
-            <div style={{ paddingTop: 48 }}>
-                <div>
-                    <div className="text-sm font-medium text-center text-body border-b border-default">
-                        <ul className="flex flex-wrap -mb-px">
-                            <li className="me-2">
-                                <a
-                                    href="/#"
-                                    className="inline-block p-4 border-b border-transparent rounded-t-base hover:text-fg-brand hover:border-brand"
-                                >
-                                    Profile
-                                </a>
-                            </li>
-                            <li className="me-2">
-                                <a
-                                    href="/#"
-                                    className="inline-block p-4 text-fg-brand border-b border-brand rounded-t-base active"
-                                    aria-current="page"
-                                >
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li className="me-2">
-                                <a
-                                    href="/#"
-                                    className="inline-block p-4 border-b border-transparent rounded-t-base hover:text-fg-brand hover:border-brand"
-                                >
-                                    Settings
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <CustomTabPanel value={value} index={0}>
-                        <DevPhilosophy />
-                    </CustomTabPanel>
-                    <CustomTabPanel value={value} index={1}>
-                        <CultureFit />
-                    </CustomTabPanel>
-                    <CustomTabPanel value={value} index={2}>
-                        <Interests />
-                    </CustomTabPanel>
-                </div>
-            </div>
+            <p className="font-bold text-4xl text-white mb-12">Career</p>
         </Section>
     );
 };
