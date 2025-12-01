@@ -2,8 +2,9 @@ import { type FC } from 'react';
 import Section from '@/components/atoms/Section';
 import Card from '@/components/atoms/Card';
 import Slider from '@/components/molecules/Slider';
+import { projectList } from '@/constants/projectList';
 
-const defaultWidth = 80;
+const sliderWidth = 80;
 
 const Projects: FC = () => {
     return (
@@ -15,15 +16,13 @@ const Projects: FC = () => {
                         <p>사용 툴 입니다.</p>
                     </div>
                 </div>
-                <div className="relative overflow-hidden w-[60%] h-full">
-                    <Slider width={defaultWidth}>
-                        {[{ title: 'project1' }, { title: 'project2' }, { title: 'project3' }].map((v) => (
-                            <Card key={v.title} width={defaultWidth}>
-                                {v.title}
-                            </Card>
-                        ))}
-                    </Slider>
-                </div>
+                <Slider width={sliderWidth}>
+                    {projectList.map((v) => (
+                        <Card key={v.title} width={sliderWidth}>
+                            {v.title}
+                        </Card>
+                    ))}
+                </Slider>
             </div>
         </Section>
     );
