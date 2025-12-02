@@ -19,7 +19,30 @@ const Projects: FC = () => {
                 <Slider width={sliderWidth}>
                     {projectList.map((v) => (
                         <Card key={v.title} width={sliderWidth}>
-                            {v.title}
+                            <p className="mb-1">{v.title}</p>
+                            <div className="flex gap-1 mb-4 text-xs">
+                                <span>{v.startDate}</span>
+                                <span>~</span>
+                                <span>{v.endDate}</span>
+                            </div>
+                            <div className="flex flex-wrap gap-1 mb-4">
+                                {v.skills.map((skill) => (
+                                    <p
+                                        key={skill}
+                                        className="flex justify-center items-center text-sm rounded-lg pl-2 pr-2 bg-gray-200"
+                                    >
+                                        {skill}
+                                    </p>
+                                ))}
+                            </div>
+                            <ul className="flex flex-col gap-1">
+                                {v.contents.map((content) => (
+                                    <li key={content} className="flex gap-2 text-sm">
+                                        <span>-</span>
+                                        <span>{content}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </Card>
                     ))}
                 </Slider>

@@ -32,7 +32,7 @@ const Slider: FC<Props> = ({ children, width }) => {
                 <button
                     type="button"
                     className="cursor-pointer w-10 h-10 rounded-full bg-[rgba(0,0,0,0.1)] hover:bg-[rgba(0,0,0,0.2)] disabled:cursor-auto disabled:opacity-0 transition-all duration-400"
-                    style={{ transform: `translateX(${hover ? 0 : -20}rem)` }}
+                    style={{ transform: `translateX(${hover ? 1 : -20}rem)` }}
                     onClick={handleClickLeft}
                     disabled={cardKey === 1}
                 >
@@ -41,7 +41,7 @@ const Slider: FC<Props> = ({ children, width }) => {
                 <button
                     type="button"
                     className="cursor-pointer w-10 h-10 rounded-full bg-[rgba(0,0,0,0.1)] hover:bg-[rgba(0,0,0,0.2)] disabled:cursor-auto disabled:opacity-0 transition-all duration-400"
-                    style={{ transform: `translateX(${hover ? 0 : 20}rem)` }}
+                    style={{ transform: `translateX(${hover ? -1 : 20}rem)` }}
                     onClick={handleClickRight}
                     disabled={cardKey === children.length}
                 >
@@ -49,12 +49,17 @@ const Slider: FC<Props> = ({ children, width }) => {
                 </button>
             </div>
             <div
-                className="flex gap-8 h-full p-4 pl-40 pr-40 transition-all duration-700"
-                style={{ transform: `translateX(${-(cardKey * (width + 8)) / 4}rem)` }}
+                className="flex gap-4 h-full p-4 pl-40 pr-40 transition-all duration-700"
+                style={{ transform: `translateX(${-(cardKey * (width + 4)) / 4}rem)` }}
             >
-                <Card width={width} />
-                {children}
-                <Card width={width} />
+                <Card width={width} style={{ transform: 'scale(0.9)' }} />
+                {children.map((child, i) => {
+                    const isActive = i + 1 === cardKey;
+                    return React.cloneElement(child, {
+                        style: { transform: `scale(${isActive ? 1 : 0.9})` },
+                    });
+                })}
+                <Card width={width} style={{ transform: 'scale(0.9)' }} />
             </div>
         </div>
     );
