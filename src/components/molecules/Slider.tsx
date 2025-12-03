@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import type { FC } from 'react';
 import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon } from '@heroicons/react/24/outline';
 import Card from '@/components/atoms/Card';
 
 interface Props {
-    width: number;
     children: React.ReactElement[];
+    width: number;
+    onChange?: (cardKey: number) => void;
 }
 
-const Slider: FC<Props> = ({ children, width }) => {
+const Slider: FC<Props> = ({ children, width, onChange }) => {
     const [hover, setHover] = useState(false);
     const [cardKey, setCardKey] = useState(1);
 
@@ -21,6 +22,10 @@ const Slider: FC<Props> = ({ children, width }) => {
         e.stopPropagation();
         setCardKey((prev) => prev + 1);
     };
+
+    useEffect(() => {
+        onChange?.(cardKey);
+    }, [cardKey]);
 
     return (
         <div

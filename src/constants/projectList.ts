@@ -1,4 +1,13 @@
-export const projectList = [
+export type ProjectType = {
+    title: string;
+    startDate: string;
+    endDate: string;
+    skills: string[];
+    contents: string[];
+    gif: string;
+};
+
+export const projectList: ProjectType[] = [
     {
         title: 'v2.0-Eatery',
         startDate: '2023-08-01',
@@ -25,6 +34,7 @@ export const projectList = [
             'chrome, safari, firefox, opera에 대한 크로스브라우징 테스트',
             '미디어쿼리를 이용한 반응형/적응형 구현',
         ],
+        gif: '/gif/v2.0-Eatery.gif',
     },
     {
         title: 'v1.0-Eatery',
@@ -38,6 +48,7 @@ export const projectList = [
             'typescript 마이그레이션',
             'storybook mdx 도입',
         ],
+        gif: '/gif/v1.0-Eatery.gif',
     },
     {
         title: 'Step-IT',
@@ -45,6 +56,7 @@ export const projectList = [
         endDate: '2023-06-14',
         skills: ['Typescript', 'Java', 'ReactNative', 'recoil', 'styled-components', 'Git', 'Github'],
         contents: ['next 기반의 SSR 웹 애플리케이션 구축', 'BEM 방법론을 적용하여 styled components 사용'],
+        gif: '/gif/Step-IT.gif',
     },
     {
         title: 'KCOOK',
@@ -52,6 +64,7 @@ export const projectList = [
         endDate: '2022-10-31',
         skills: ['Typescript', 'React', 'SCSS', 'Git', 'Github'],
         contents: ['로딩페이지 뷰 변경', 'overlay transition 개선', '플러그인 관리 페이지 table 뷰 개선 및 번역 추가'],
+        gif: '/gif/KCOOK.gif',
     },
     {
         title: 'Pick-IT',
@@ -59,6 +72,7 @@ export const projectList = [
         endDate: '2022-06-16',
         skills: ['Javascript', 'React', 'SCSS'],
         contents: ['newtab extension 개발', 'popup extension 개발', 'extension에 맞는 웹팩 셋팅'],
+        gif: '/gif/Pick-IT.gif',
     },
     {
         title: 'Seasons',
@@ -69,5 +83,6 @@ export const projectList = [
             '채소를 검색하여 장바구니에 담는 페이지 개발',
             '장바구니의 채소들에 대해 커머스 별로 가격을 보여주는 페이지 개발',
         ],
+        gif: '/gif/Seasons.gif',
     },
 ] as const;

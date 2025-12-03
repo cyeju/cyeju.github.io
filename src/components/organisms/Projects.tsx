@@ -1,22 +1,25 @@
-import { type FC } from 'react';
+import { useState, type FC } from 'react';
 import Section from '@/components/atoms/Section';
 import Card from '@/components/atoms/Card';
 import Slider from '@/components/molecules/Slider';
-import { projectList } from '@/constants/projectList';
+import { projectList, type ProjectType } from '@/constants/projectList';
 
 const sliderWidth = 80;
 
 const Projects: FC = () => {
+    const [project, setProject] = useState<ProjectType>(projectList[0]);
+
+    const handleChange = (cardKey: number) => {
+        setProject(projectList[cardKey - 1]);
+    };
+
     return (
         <Section id="projects">
-            <div className="overflow-hidden flex w-full h-100">
-                <div className="flex justify-end w-[40%] h-full shadow-[4px_0_100px_rgba(0,0,0,0.2)] z-1">
-                    <div className="flex flex-col gap-2 w-80 max-w-80 min-w-80 h-full p-4 bg-white">
-                        <p>프로젝트 이름 입니다.</p>
-                        <p>사용 툴 입니다.</p>
-                    </div>
+            <div className="overflow-hidden flex w-full h-120">
+                <div className="relative overflow-hidden flex flex-col items-center justify-center w-[40%] h-full shadow-[4px_0_100px_rgba(0,0,0,0.2)] z-1">
+                    <img alt={project.gif} src={project.gif} className="max-w-full max-h-full object-contain z-1" />
                 </div>
-                <Slider width={sliderWidth}>
+                <Slider width={sliderWidth} onChange={handleChange}>
                     {projectList.map((v) => (
                         <Card key={v.title} width={sliderWidth}>
                             <p className="mb-1">{v.title}</p>
