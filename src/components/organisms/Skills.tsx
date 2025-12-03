@@ -5,8 +5,8 @@ import Section from '@/components/atoms/Section';
 
 const Skills: FC = () => {
     return (
-        <Section id="skills">
-            <p className="font-bold text-4xl mb-12">Skills</p>
+        <Section id="skills" bgColor="black">
+            <p className="font-bold text-4xl text-white mb-12">Skills</p>
             <div className="flex flex-col">
                 <div className="flex gap-4">
                     <span>Typescript</span>
