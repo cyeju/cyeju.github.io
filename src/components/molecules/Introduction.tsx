@@ -6,7 +6,7 @@ const Introduction: FC = () => {
     return (
         <section className="flex flex-col pt-12 -mt-12">
             <div className="flex flex-col gap-4 max-w-2xl min-h-md m-auto py-24">
-                <h1 className="font-bold text-md text-gray-600">안녕하세요 :&#41;</h1>
+                <h1 className="font-bold text-xl text-gray-600">안녕하세요 :&#41;</h1>
                 <p className="font-bold text-4xl text-gray-600">프론트엔드 개발자 최예주 입니다.</p>
                 <p className="text-md mt-4 text-gray-500">
                     저는 수학 문제 푸는 것을 좋아해서 수학과 전공을 선택하였습니다. 복수전공을 시작하면서 수학과 비슷한
