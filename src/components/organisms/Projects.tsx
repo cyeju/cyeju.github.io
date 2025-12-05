@@ -15,9 +15,12 @@ const Projects: FC = () => {
 
     return (
         <Section id="projects">
+            <h1 className="mb-16 font-bold text-4xl text-gray-600">Projects</h1>
             <div className="overflow-hidden flex w-full h-120">
-                <div className="relative overflow-hidden flex flex-col items-center justify-center w-[40%] h-full shadow-[4px_0_100px_rgba(0,0,0,0.2)] z-1">
-                    <img alt={project.gif} src={project.gif} className="max-w-full max-h-full object-contain z-1" />
+                <div className="relative overflow-hidden flex flex-col items-end justify-center w-[40%] h-full shadow-[4px_0_100px_rgba(0,0,0,0.2)] z-1">
+                    <div className="flex flex-col w-full max-w-[480px] h-full p-2 justify-center">
+                        <img alt={project.gif} src={project.gif} className="max-w-full max-h-full object-contain z-1" />
+                    </div>
                 </div>
                 <Slider width={sliderWidth} onChange={handleChange}>
                     {projectList.map((v) => (
