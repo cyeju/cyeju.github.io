@@ -55,7 +55,11 @@ const Slider: FC<Props> = ({ children, width, onChange }) => {
             </div>
             <div
                 className="flex gap-4 h-full p-4 pl-40 pr-40 transition-all duration-700"
-                style={{ transform: `translateX(${-(cardKey * (width + 4)) / 4}rem)` }}
+                style={{
+                    transform: `translateX(calc(${window.innerWidth * 0.3}px - ${(width + 4) / 4}rem + ${
+                        -(cardKey * (width + 4)) / 4
+                    }rem))`,
+                }}
             >
                 <Card width={width} style={{ transform: 'scale(0.9)' }} />
                 {children.map((child, i) => {
